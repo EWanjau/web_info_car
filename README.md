@@ -1,6 +1,6 @@
 # Japanese Car Data Scraper
 
-Scrapes used car listings from [japanesecartrade.com](https://www.japanesecartrade.com/zenmobilityjapan/stock-list.html) using Selenium and saves structured data to a CSV file. Designed to handle large multi-page catalogs (~1,300+ pages) with resume support and automatic browser restarts.
+Scrapes used car listings from [beforward.jp](https://www.beforward.jp/) using Selenium and saves structured data to a CSV file. Designed to handle large multi-page catalogs (~1,300+ pages) with resume support and automatic browser restarts.
 
 ## Features
 
@@ -81,7 +81,7 @@ chromedriver --version
 ## Usage
 
 ```bash
-python scrap.py
+python scrape.py
 ```
 
 The scraper will:
@@ -92,12 +92,12 @@ The scraper will:
 
 ## Configuration
 
-Edit the constants at the top of [scrap.py](scrap.py):
+Edit the constants at the top of [scrape.py](scrape.py):
 
 | Variable | Default | Description |
 |---|---|---|
 | `CHROMEDRIVER_PATH` | `/usr/bin/chromedriver` | Path to chromedriver binary |
-| `BASE_URL` | japanesecartrade.com stock list | Target URL |
+| `BASE_URL` | beforward.jp stock list | Target URL |
 | `OUTPUT_FILE` | `car_data.csv` | Output CSV path |
 | `FAILED_PAGES_FILE` | `failed_pages.txt` | Failed pages log |
 | `SLEEP_BETWEEN_PAGES` | `1.5` | Delay between pages (seconds) |
@@ -107,7 +107,7 @@ Edit the constants at the top of [scrap.py](scrap.py):
 
 ```
 japanese-car-data-scrapping/
-├── scrap.py            # Main scraper script
+├── scrape.py           # Main scraper script
 ├── car_data.csv        # Output data (generated on run)
 ├── failed_pages.txt    # Pages that failed (generated if errors occur)
 ├── requirements.txt    # Pinned dependency list

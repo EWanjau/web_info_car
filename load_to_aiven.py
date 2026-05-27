@@ -45,8 +45,7 @@ def create_table(conn):
                 has_camera        SMALLINT,
                 location          TEXT,
                 date_listed       VARCHAR(30),
-                detail_url        TEXT,
-                created_at        TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                detail_url        TEXT
             );
         """)
         conn.commit()
