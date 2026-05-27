@@ -17,7 +17,7 @@ from urllib.parse import urljoin
 # =========================
 
 BASE_URL = "https://www.beforward.jp/stocklist/steering=Right/mfg_year_from=2018/view_cnt=25/page=1/sar=steering/from_stocklist=1/kmode=and/"
-OUTPUT_FILE = "car_data.csv"
+OUTPUT_FILE = "../data/raw/car_data.csv"
 FAILED_PAGES_FILE = "failed_pages.txt"
 
 PAGE_SIZE = 25
